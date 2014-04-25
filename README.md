@@ -3,6 +3,17 @@ CSLazyLoadController
 
 CSLazyLoadController helps you intergrate lazy loading images in iOS apps.
 
+### Installation with CocoaPods
+
+[CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like JBMessage in your projects.
+
+#### Podfile
+
+```ruby
+platform :ios, '6.0'
+pod 'CSLazyLoadController', '~> 1.0'
+```
+
 ## Usage
 ### Create property and conform to CSLazyLoadControllerDelegate 
 ```objective-c

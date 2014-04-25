@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F26AE92190A95E100A41801 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F26AE91190A95E100A41801 /* Foundation.framework */; };
+		1F26AE94190A95E100A41801 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F26AE93190A95E100A41801 /* CoreGraphics.framework */; };
+		1F26AE96190A95E100A41801 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F26AE95190A95E100A41801 /* UIKit.framework */; };
+		1F26AE9C190A95E100A41801 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F26AE9A190A95E100A41801 /* InfoPlist.strings */; };
+		1F26AE9E190A95E100A41801 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F26AE9D190A95E100A41801 /* main.m */; };
+		1F26AEA2190A95E100A41801 /* CSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F26AEA1190A95E100A41801 /* CSAppDelegate.m */; };
+		1F26AEA5190A95E100A41801 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F26AEA3190A95E100A41801 /* Main.storyboard */; };
+		1F26AEA8190A95E100A41801 /* CSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F26AEA7190A95E100A41801 /* CSViewController.m */; };
+		1F26AEAA190A95E100A41801 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F26AEA9190A95E100A41801 /* Images.xcassets */; };
+		1F26AEB1190A95E100A41801 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F26AEB0190A95E100A41801 /* XCTest.framework */; };
+		1F26AEB2190A95E100A41801 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F26AE91190A95E100A41801 /* Foundation.framework */; };
+		1F26AEB3190A95E100A41801 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F26AE95190A95E100A41801 /* UIKit.framework */; };
+		1F26AEBB190A95E100A41801 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F26AEB9190A95E100A41801 /* InfoPlist.strings */; };
+		1F26AEBD190A95E100A41801 /* CSLazyLoadControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F26AEBC190A95E100A41801 /* CSLazyLoadControllerTests.m */; };
+		1F26AECF190A968B00A41801 /* CSCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F26AEC8190A968B00A41801 /* CSCacheManager.m */; };
+		1F26AED1190A968B00A41801 /* CSLazyLoadController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F26AECC190A968B00A41801 /* CSLazyLoadController.m */; };
+		1F26AED2190A968B00A41801 /* CSURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F26AECE190A968B00A41801 /* CSURL.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F26AEB4190A95E100A41801 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F26AE86190A95E100A41801 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F26AE8D190A95E100A41801;
+			remoteInfo = CSLazyLoadController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F26AE8E190A95E100A41801 /* CSLazyLoadController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSLazyLoadController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F26AE91190A95E100A41801 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1F26AE93190A95E100A41801 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1F26AE95190A95E100A41801 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1F26AE99190A95E100A41801 /* CSLazyLoadController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CSLazyLoadController-Info.plist"; sourceTree = "<group>"; };
+		1F26AE9B190A95E100A41801 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1F26AE9D190A95E100A41801 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F26AE9F190A95E100A41801 /* CSLazyLoadController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CSLazyLoadController-Prefix.pch"; sourceTree = "<group>"; };
+		1F26AEA0190A95E100A41801 /* CSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSAppDelegate.h; sourceTree = "<group>"; };
+		1F26AEA1190A95E100A41801 /* CSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSAppDelegate.m; sourceTree = "<group>"; };
+		1F26AEA4190A95E100A41801 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F26AEA6190A95E100A41801 /* CSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSViewController.h; sourceTree = "<group>"; };
+		1F26AEA7190A95E100A41801 /* CSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSViewController.m; sourceTree = "<group>"; };
+		1F26AEA9190A95E100A41801 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1F26AEAF190A95E100A41801 /* CSLazyLoadControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSLazyLoadControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F26AEB0190A95E100A41801 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1F26AEB8190A95E100A41801 /* CSLazyLoadControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CSLazyLoadControllerTests-Info.plist"; sourceTree = "<group>"; };
+		1F26AEBA190A95E100A41801 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1F26AEBC190A95E100A41801 /* CSLazyLoadControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSLazyLoadControllerTests.m; sourceTree = "<group>"; };
+		1F26AEC7190A968B00A41801 /* CSCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSCacheManager.h; sourceTree = "<group>"; };
+		1F26AEC8190A968B00A41801 /* CSCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSCacheManager.m; sourceTree = "<group>"; };
+		1F26AECB190A968B00A41801 /* CSLazyLoadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLazyLoadController.h; sourceTree = "<group>"; };
+		1F26AECC190A968B00A41801 /* CSLazyLoadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLazyLoadController.m; sourceTree = "<group>"; };
+		1F26AECD190A968B00A41801 /* CSURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSURL.h; sourceTree = "<group>"; };
+		1F26AECE190A968B00A41801 /* CSURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSURL.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F26AE8B190A95E100A41801 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F26AE94190A95E100A41801 /* CoreGraphics.framework in Frameworks */,
+				1F26AE96190A95E100A41801 /* UIKit.framework in Frameworks */,
+				1F26AE92190A95E100A41801 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F26AEAC190A95E100A41801 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F26AEB1190A95E100A41801 /* XCTest.framework in Frameworks */,
+				1F26AEB3190A95E100A41801 /* UIKit.framework in Frameworks */,
+				1F26AEB2190A95E100A41801 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F26AE85190A95E100A41801 = {
+			isa = PBXGroup;
+			children = (
+				1F26AE97190A95E100A41801 /* CSLazyLoadController */,
+				1F26AEB6190A95E100A41801 /* CSLazyLoadControllerTests */,
+				1F26AE90190A95E100A41801 /* Frameworks */,
+				1F26AE8F190A95E100A41801 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F26AE8F190A95E100A41801 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F26AE8E190A95E100A41801 /* CSLazyLoadController.app */,
+				1F26AEAF190A95E100A41801 /* CSLazyLoadControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F26AE90190A95E100A41801 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F26AE91190A95E100A41801 /* Foundation.framework */,
+				1F26AE93190A95E100A41801 /* CoreGraphics.framework */,
+				1F26AE95190A95E100A41801 /* UIKit.framework */,
+				1F26AEB0190A95E100A41801 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F26AE97190A95E100A41801 /* CSLazyLoadController */ = {
+			isa = PBXGroup;
+			children = (
+				1F26AEC6190A968B00A41801 /* CSLazyLoadController */,
+				1F26AEA0190A95E100A41801 /* CSAppDelegate.h */,
+				1F26AEA1190A95E100A41801 /* CSAppDelegate.m */,
+				1F26AEA3190A95E100A41801 /* Main.storyboard */,
+				1F26AEA6190A95E100A41801 /* CSViewController.h */,
+				1F26AEA7190A95E100A41801 /* CSViewController.m */,
+				1F26AEA9190A95E100A41801 /* Images.xcassets */,
+				1F26AE98190A95E100A41801 /* Supporting Files */,
+			);
+			path = CSLazyLoadController;
+			sourceTree = "<group>";
+		};
+		1F26AE98190A95E100A41801 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F26AE99190A95E100A41801 /* CSLazyLoadController-Info.plist */,
+				1F26AE9A190A95E100A41801 /* InfoPlist.strings */,
+				1F26AE9D190A95E100A41801 /* main.m */,
+				1F26AE9F190A95E100A41801 /* CSLazyLoadController-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F26AEB6190A95E100A41801 /* CSLazyLoadControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F26AEBC190A95E100A41801 /* CSLazyLoadControllerTests.m */,
+				1F26AEB7190A95E100A41801 /* Supporting Files */,
+			);
+			path = CSLazyLoadControllerTests;
+			sourceTree = "<group>";
+		};
+		1F26AEB7190A95E100A41801 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F26AEB8190A95E100A41801 /* CSLazyLoadControllerTests-Info.plist */,
+				1F26AEB9190A95E100A41801 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F26AEC6190A968B00A41801 /* CSLazyLoadController */ = {
+			isa = PBXGroup;
+			children = (
+				1F26AEC7190A968B00A41801 /* CSCacheManager.h */,
+				1F26AEC8190A968B00A41801 /* CSCacheManager.m */,
+				1F26AECB190A968B00A41801 /* CSLazyLoadController.h */,
+				1F26AECC190A968B00A41801 /* CSLazyLoadController.m */,
+				1F26AECD190A968B00A41801 /* CSURL.h */,
+				1F26AECE190A968B00A41801 /* CSURL.m */,
+			);
+			path = CSLazyLoadController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F26AE8D190A95E100A41801 /* CSLazyLoadController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F26AEC0190A95E100A41801 /* Build configuration list for PBXNativeTarget "CSLazyLoadController" */;
+			buildPhases = (
+				1F26AE8A190A95E100A41801 /* Sources */,
+				1F26AE8B190A95E100A41801 /* Frameworks */,
+				1F26AE8C190A95E100A41801 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CSLazyLoadController;
+			productName = CSLazyLoadController;
+			productReference = 1F26AE8E190A95E100A41801 /* CSLazyLoadController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F26AEAE190A95E100A41801 /* CSLazyLoadControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F26AEC3190A95E100A41801 /* Build configuration list for PBXNativeTarget "CSLazyLoadControllerTests" */;
+			buildPhases = (
+				1F26AEAB190A95E100A41801 /* Sources */,
+				1F26AEAC190A95E100A41801 /* Frameworks */,
+				1F26AEAD190A95E100A41801 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F26AEB5190A95E100A41801 /* PBXTargetDependency */,
+			);
+			name = CSLazyLoadControllerTests;
+			productName = CSLazyLoadControllerTests;
+			productReference = 1F26AEAF190A95E100A41801 /* CSLazyLoadControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F26AE86190A95E100A41801 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Clover-Studio";
+				TargetAttributes = {
+					1F26AEAE190A95E100A41801 = {
+						TestTargetID = 1F26AE8D190A95E100A41801;
+					};
+				};
+			};
+			buildConfigurationList = 1F26AE89190A95E100A41801 /* Build configuration list for PBXProject "CSLazyLoadController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F26AE85190A95E100A41801;
+			productRefGroup = 1F26AE8F190A95E100A41801 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F26AE8D190A95E100A41801 /* CSLazyLoadController */,
+				1F26AEAE190A95E100A41801 /* CSLazyLoadControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F26AE8C190A95E100A41801 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F26AEAA190A95E100A41801 /* Images.xcassets in Resources */,
+				1F26AE9C190A95E100A41801 /* InfoPlist.strings in Resources */,
+				1F26AEA5190A95E100A41801 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F26AEAD190A95E100A41801 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F26AEBB190A95E100A41801 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F26AE8A190A95E100A41801 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F26AECF190A968B00A41801 /* CSCacheManager.m in Sources */,
+				1F26AEA2190A95E100A41801 /* CSAppDelegate.m in Sources */,
+				1F26AE9E190A95E100A41801 /* main.m in Sources */,
+				1F26AED1190A968B00A41801 /* CSLazyLoadController.m in Sources */,
+				1F26AED2190A968B00A41801 /* CSURL.m in Sources */,
+				1F26AEA8190A95E100A41801 /* CSViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F26AEAB190A95E100A41801 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F26AEBD190A95E100A41801 /* CSLazyLoadControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F26AEB5190A95E100A41801 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F26AE8D190A95E100A41801 /* CSLazyLoadController */;
+			targetProxy = 1F26AEB4190A95E100A41801 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F26AE9A190A95E100A41801 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F26AE9B190A95E100A41801 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1F26AEA3190A95E100A41801 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F26AEA4190A95E100A41801 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F26AEB9190A95E100A41801 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F26AEBA190A95E100A41801 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F26AEBE190A95E100A41801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1F26AEBF190A95E100A41801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F26AEC1190A95E100A41801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CSLazyLoadController/CSLazyLoadController-Prefix.pch";
+				INFOPLIST_FILE = "CSLazyLoadController/CSLazyLoadController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1F26AEC2190A95E100A41801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CSLazyLoadController/CSLazyLoadController-Prefix.pch";
+				INFOPLIST_FILE = "CSLazyLoadController/CSLazyLoadController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1F26AEC4190A95E100A41801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CSLazyLoadController.app/CSLazyLoadController";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CSLazyLoadController/CSLazyLoadController-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CSLazyLoadControllerTests/CSLazyLoadControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1F26AEC5190A95E100A41801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CSLazyLoadController.app/CSLazyLoadController";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CSLazyLoadController/CSLazyLoadController-Prefix.pch";
+				INFOPLIST_FILE = "CSLazyLoadControllerTests/CSLazyLoadControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F26AE89190A95E100A41801 /* Build configuration list for PBXProject "CSLazyLoadController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F26AEBE190A95E100A41801 /* Debug */,
+				1F26AEBF190A95E100A41801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F26AEC0190A95E100A41801 /* Build configuration list for PBXNativeTarget "CSLazyLoadController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F26AEC1190A95E100A41801 /* Debug */,
+				1F26AEC2190A95E100A41801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F26AEC3190A95E100A41801 /* Build configuration list for PBXNativeTarget "CSLazyLoadControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F26AEC4190A95E100A41801 /* Debug */,
+				1F26AEC5190A95E100A41801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F26AE86190A95E100A41801 /* Project object */;
+}

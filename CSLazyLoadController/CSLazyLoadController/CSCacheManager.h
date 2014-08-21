@@ -23,7 +23,7 @@
  */
 + (CSCacheManager *)defaultCache;
 
-#pragma mark - Saving Images
+#pragma mark - Saving Data
 
 /**
  *  Caches image to RAM and optionaly to disk storage for given URL key.
@@ -32,9 +32,16 @@
  *  @param URL        URL for which image will be cached. If nil NSInvalidArgumentException is raised.
  *  @param shouldSave Boolean value determening whether image should be written to device disk or not.
  */
-- (void)cacheImage:(UIImage *)image
-               url:(CSURL *)URL
-        saveToDisk:(BOOL)shouldSave;
+- (void)cacheImage:(UIImage *)image url:(CSURL *)URL saveToDisk:(BOOL)shouldSave;
+
+/**
+ *  Caches data to RAM optionaly to disk storage for given URL key.
+ *
+ *  @param data       Data object to be saved. If object is nil it will remove existing object for given URL.
+ *  @param URL        URL for which image will be cached. If nil NSInvalidArgumentException is raised.
+ *  @param shouldSave Boolean value determening whether image should be written to device disk or not.
+ */
+- (void)cacheData:(NSData *)data url:(CSURL *)URL saveToDisk:(BOOL)shouldSave;
 
 #pragma mark - Getting Images
 /**
@@ -45,7 +52,6 @@
  *
  *  @return Image object associated with URL object.
  */
-- (UIImage *)readCachedImage:(CSURL *)URL
-                    fromDisk:(BOOL)readFromDisk;
+- (UIImage *)readCachedImage:(CSURL *)URL fromDisk:(BOOL)readFromDisk;
 
 @end

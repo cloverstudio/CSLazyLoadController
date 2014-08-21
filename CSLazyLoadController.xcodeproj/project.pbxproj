@@ -24,6 +24,7 @@
 		1F26AECF190A968B00A41801 /* CSCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F26AEC8190A968B00A41801 /* CSCacheManager.m */; };
 		1F26AED1190A968B00A41801 /* CSLazyLoadController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F26AECC190A968B00A41801 /* CSLazyLoadController.m */; };
 		1F26AED2190A968B00A41801 /* CSURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F26AECE190A968B00A41801 /* CSURL.m */; };
+		1F9EB36C19A603E800D98D20 /* NSURL+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9EB36B19A603E800D98D20 /* NSURL+Parameters.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		1F26AECC190A968B00A41801 /* CSLazyLoadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLazyLoadController.m; sourceTree = "<group>"; };
 		1F26AECD190A968B00A41801 /* CSURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSURL.h; sourceTree = "<group>"; };
 		1F26AECE190A968B00A41801 /* CSURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSURL.m; sourceTree = "<group>"; };
+		1F9EB36A19A603E800D98D20 /* NSURL+Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Parameters.h"; sourceTree = "<group>"; };
+		1F9EB36B19A603E800D98D20 /* NSURL+Parameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Parameters.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,7 @@
 		1F26AEC6190A968B00A41801 /* CSLazyLoadController */ = {
 			isa = PBXGroup;
 			children = (
+				1F9EB36919A603E800D98D20 /* NSURL+Parameters */,
 				1F26AEC7190A968B00A41801 /* CSCacheManager.h */,
 				1F26AEC8190A968B00A41801 /* CSCacheManager.m */,
 				1F26AECB190A968B00A41801 /* CSLazyLoadController.h */,
@@ -173,6 +177,15 @@
 				1F26AECE190A968B00A41801 /* CSURL.m */,
 			);
 			path = CSLazyLoadController;
+			sourceTree = "<group>";
+		};
+		1F9EB36919A603E800D98D20 /* NSURL+Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				1F9EB36A19A603E800D98D20 /* NSURL+Parameters.h */,
+				1F9EB36B19A603E800D98D20 /* NSURL+Parameters.m */,
+			);
+			path = "NSURL+Parameters";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +291,7 @@
 				1F26AE9E190A95E100A41801 /* main.m in Sources */,
 				1F26AED1190A968B00A41801 /* CSLazyLoadController.m in Sources */,
 				1F26AED2190A968B00A41801 /* CSURL.m in Sources */,
+				1F9EB36C19A603E800D98D20 /* NSURL+Parameters.m in Sources */,
 				1F26AEA8190A95E100A41801 /* CSViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,10 +417,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CSLazyLoadController/CSLazyLoadController-Prefix.pch";
 				INFOPLIST_FILE = "CSLazyLoadController/CSLazyLoadController-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -420,6 +436,7 @@
 				GCC_PREFIX_HEADER = "CSLazyLoadController/CSLazyLoadController-Prefix.pch";
 				INFOPLIST_FILE = "CSLazyLoadController/CSLazyLoadController-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

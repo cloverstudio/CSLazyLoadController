@@ -40,6 +40,11 @@ extern CSHTTPMethod const CSHTTPMethodDELETE;   ///HTTP DELETE method.
  */
 @property (nonatomic, strong, readonly) NSString *hashValue;
 
+/**
+ *  Array of keys which will be ignored when hash is created. This can be helpful if your file contains token which can be different each time you log in.
+ */
+@property (nonatomic, strong) NSArray *ignoredHashParameters;
+
 #pragma mark - Initialization
 /**
  *  Creates instance with given string and CSHTTPMethodGet as httpMethod.

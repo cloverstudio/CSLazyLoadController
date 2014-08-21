@@ -51,9 +51,7 @@
 
 #pragma mark - Saving Images
 
-- (void)cacheImage:(UIImage *)image
-               url:(CSURL *)URL
-        saveToDisk:(BOOL)shouldSave {
+- (void)cacheImage:(UIImage *)image url:(CSURL *)URL saveToDisk:(BOOL)shouldSave {
 
     if (!URL) {
         NSParameterAssert(URL);
@@ -71,6 +69,10 @@
     if (shouldSave) {
         [self writeImageToDisk:image url:URL];
     }
+}
+
+- (void)cacheData:(NSData *)data url:(CSURL *)URL saveToDisk:(BOOL)shouldSave {
+
 }
 
 #pragma mark - Image Writing

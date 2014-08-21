@@ -8,6 +8,8 @@
 
 #import "CSURL.h"
 #import <CommonCrypto/CommonDigest.h>
+#import "NSURL+Parameters.h"
+
 
 CSHTTPMethod const CSHTTPMethodGET      = @"GET";
 CSHTTPMethod const CSHTTPMethodPOST     = @"POST";
@@ -65,17 +67,40 @@ CSHTTPMethod const CSHTTPMethodDELETE   = @"DELETE";
 - (NSString *)hashValue {
     
     if (self.httpMethod == CSHTTPMethodGET || !self.parameters.count) {
-        return [self.stringURL sha256String];
+        
+        if (!self.ignoredHashParameters || !self.ignoredHashParameters.count) {
+            return [self.stringURL sha256String];
+        }
+        
+        NSString *stringUrl = [self.stringURL copy];
+        NSURL *URL = [NSURL URLWithString:stringUrl];
+        
+        for (NSString *key in self.ignoredHashParameters) {
+            
+            NSString *value = [URL parameterForKey:key];
+            if (value && value.length) {
+                
+                stringUrl = [stringUrl stringByReplacingOccurrencesOfString:[NSString stringWithFormat:@"%@=%@", key, value]
+                                                                 withString:@""];
+            }
+        }
+        
+        return [stringUrl sha256String];
     }
     
     if (_hashString) { return _hashString; }
     
     NSMutableString *string = [NSMutableString stringWithFormat:@"%@?", self.stringURL];
     for (NSString *key in self.parameters.allKeys) {
+        
         if (![key isKindOfClass:[NSString class]] ||
             ![self.parameters[key] isKindOfClass:[NSString class]]) {
             continue;
         }
+        if ([self.ignoredHashParameters containsObject:key]) {
+            continue;
+        }
+        
         [string appendFormat:@"%@=%@&", key, self.parameters[key]];
     }
     _hashString = [string sha256String];
